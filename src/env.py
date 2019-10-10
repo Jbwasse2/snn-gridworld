@@ -106,16 +106,16 @@ class GridWorld(BaseEnv):
         self.size = size
 
         if self.goal is None:
-            self.goal = self.grids[map_states(size[0] * size[1])-1]
+            self.goal = self.grids[self.map_states(size[0] * size[1])-1]
         elif self.goal is int:
-            self.goal = self.grids[map_states(self.goal)]
+            self.goal = self.grids[self.map_states(self.goal)]
         else:
             raise TypeError
 
         if self.start is None:
-            self.start = self.grids[map_states(0)]
+            self.start = self.grids[self.map_states(0)]
         elif self.start is int:
-            self.start = self.grids[map_states(self.start)]
+            self.start = self.grids[self.map_states(self.start)]
         else:
             raise TypeError
 

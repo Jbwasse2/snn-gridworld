@@ -4,7 +4,7 @@ import unittest
 CURRENT_TEST_DIR = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(CURRENT_TEST_DIR + "/../src")
 
-from utils.env import GridWorld
+from env import GridWorld
 
 class testGridWorld(unittest.TestCase):
     def testCreate(self):
