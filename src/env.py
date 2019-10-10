@@ -172,13 +172,15 @@ class GridWorld(BaseEnv):
         """
         new_size_x = size[0] + 2
         new_size_y = size[1] + 2
+        id_counter = 1
         #First Generate Grids
         for i in range(new_size_y):
             for j in range(new_size_x):
                 if i == 0 or j == 0 or i == new_size_y-1 or j == new_size_x-1:
-                    self.grids.append(Grid('b', id = i * new_size_y + j ))
+                    self.grids.append(Grid('b'))
                 else:
-                    self.grids.append(Grid('a', id = i * new_size_y + j))
+                    self.grids.append(Grid('a', id = id_counter))
+                    id_counter += 1
         #Assign neighbors to grids
         for counter, grid in enumerate(self.grids):
             #Assign right
