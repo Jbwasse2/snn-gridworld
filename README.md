@@ -8,3 +8,7 @@
 ```
 pip install -r requirements.txt
 ```
+
+## Links
+slayerPytorch - https://github.com/bamsumit/slayerPytorch
+pytorch template - https://github.com/victoresque/pytorch-template

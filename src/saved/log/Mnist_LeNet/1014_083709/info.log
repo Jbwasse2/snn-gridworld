@@ -1,0 +1,18 @@
+2019-10-14 08:37:12,928 - train - INFO - MnistModel(
+  (conv1): Conv2d(1, 10, kernel_size=(5, 5), stride=(1, 1))
+  (conv2): Conv2d(10, 20, kernel_size=(5, 5), stride=(1, 1))
+  (conv2_drop): Dropout2d(p=0.5)
+  (fc1): Linear(in_features=320, out_features=50, bias=True)
+  (fc2): Linear(in_features=50, out_features=10, bias=True)
+)
+Trainable parameters: 21840
+2019-10-14 08:37:16,109 - trainer - WARNING - Warning: visualization (Tensorboard) is configured to use, but currently not installed on this machine. Please install TensorboardX with 'pip install tensorboardx', upgrade PyTorch to version >= 1.1 to use 'torch.utils.tensorboard' or turn off the option in the 'config.json' file.
+2019-10-14 08:37:20,095 - trainer - INFO -     epoch          : 1
+2019-10-14 08:37:20,096 - trainer - INFO -     loss           : 0.6639785651135218
+2019-10-14 08:37:20,096 - trainer - INFO -     accuracy       : 0.7879490732904536
+2019-10-14 08:37:20,096 - trainer - INFO -     top_k_acc      : 0.9304782709884901
+2019-10-14 08:37:20,096 - trainer - INFO -     val_loss       : 0.12314463184869036
+2019-10-14 08:37:20,096 - trainer - INFO -     val_accuracy   : 0.9627422112462006
+2019-10-14 08:37:20,096 - trainer - INFO -     val_top_k_acc  : 0.9954644756838905
+2019-10-14 08:37:20,101 - trainer - INFO - Saving checkpoint: saved/models/Mnist_LeNet/1014_083709/checkpoint-epoch1.pth ...
+2019-10-14 08:37:20,105 - trainer - INFO - Saving current best: model_best.pth ...
