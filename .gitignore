@@ -1,5 +1,7 @@
 *.swp
 build/*
 dist/*
+src/data/*
+src/saved/*
 *.egg-info/*
 *__pycache__*
